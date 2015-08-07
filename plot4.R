@@ -76,11 +76,11 @@ plot(subsetData$DateTime, subsetData$Sub_metering_1,
      ylab = "Energy sub metering"
 )
 
-# add lines
+# add lines to plot 3
 lines(subsetData$DateTime, subsetData$Sub_metering_2, col = "red")
 lines(subsetData$DateTime, subsetData$Sub_metering_3, col = "blue")
 
-# add legend
+# add legend to plot 3
 legend("topright",
        c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
        col = c("black", "red", "blue"),
@@ -94,7 +94,7 @@ plot(subsetData$DateTime, subsetData$Global_reactive_power,
      ylab = "Global_reactive_power"
 )
 
-# customize the x axis
+# customize the x axis for all the graphs
 axis(1, at=1:3, labels=c("Thu", "Fri", "Sat"))
 
 # close the graphic device
